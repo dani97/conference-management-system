@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Conference.com</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+  <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+		<!--<link rel="stylesheet" href="assets/css/form-elements.css">-->
+        <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="top-content">
+<div class="inner-bg">
+<div class="container">
+<div class="row">
+  <h1 style="font-style:oblique;font-family:'Trebuchet MS', Helvetica, sans-serif">CONFERENCE.com</h1>
+  <ul class="nav nav-tabs">
+    <li ><a href="index.html">Home</a></li>
+    <li><a href="login.html">Login</a></li>
+    <li class="active"><a href="register.html">Register</a></li>
+	<li><a href="institute.html">Institute login</a></li>
+
+  </ul>
+  <br>
+</div>  
+</div>
+
+<div class="container">
+  <h2>Sign up</h2>
+  <form class="form-horizontal" action="register.php" method="post" enctype="application/x-www-form-urlencoded">
+    <div class="form-group has-feedback">
+      <label class="col-sm-2 control-label">Name</label>
+      <div class="col-sm-10">
+        <input class="form-control" id="focusedInput" type="text" placeholder="name" name="name" required>
+	<span class="glyphicon glyphicon-user form-control-feedback"></span>
+      </div>
+    </div>
+    <div class="form-group has-feedback">
+      <label for="inputPassword" class="col-sm-2 control-label">Password</label>
+      <div class="col-sm-10">
+        <input class="form-control" id="focusedInput" type="password" placeholder="password" name="password" required>
+	<span class="glyphicon glyphicon-fire form-control-feedback"></span>
+      </div>
+      </div>
+	<div class="form-group has-feedback">
+      <label for="email" class="col-sm-2 control-label">Email</label>
+      <div class="col-sm-10">
+        <input class="form-control" id="focusedInput" type="email" placeholder="email" name="email" required>
+	<span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+      </div>
+      </div>
+	<div class="form-group has-feedback">
+      <label for="phoneno" class="col-sm-2 control-label">Phone Number</label>
+      <div class="col-sm-10">
+        <input class="form-control" id="focusedInput" type="text" placeholder="Phone number" name="phoneno" required>
+	<span class="glyphicon glyphicon-phone form-control-feedback"></span>
+      </div>
+	</div>
+     <div class="form-group  has-feedback">
+      <label  for="college"class="col-sm-2 control-label" for="college">College</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="college" placeholder="enter your college" name="college" required>
+        <span class="glyphicon  glyphicon-education form-control-feedback"></span>
+      </div>
+    </div>
+    <div class="form-group has-feedback">
+      <label  for="date_of_birth" class="col-sm-2 control-label" for="date_of_birth"  >Date of Birth</label>
+      <div class="col-sm-10">
+	<input type="date" class="form-control" id="date_of_birth" name="dob" placeholder="dd/mm/yy" required>
+	<span class="glyphicon  glyphicon-calendar form-control-feedback"></span>
+	</div>
+    </div>
+	<input type="hidden" name="userType" value="student">
+<div class="form-group ">
+       
+       <center><button type="submit" class="btn btn-success" name="submit" value=' '>Register</button></center>
+    </div>
+  </form>
+</div>
+</div>
+</div>
+</body>
+</html>
+
